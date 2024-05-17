@@ -1,47 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Cool Website</title>
+  <title>Mahamud's Site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
+      font-family: 'SolaimanLipi', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e5e5e5;
       margin: 0;
       padding: 0;
+      color: #333;
+      overflow-x: hidden;
     }
     header {
-      background-color: #333;
-      color: #fff;
+      background-color: #003366;
       padding: 20px;
       text-align: center;
+      border-bottom: 4px solid #ff9933;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 9999;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3.5rem;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #fff;
     }
     nav {
-      background-color: #444;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 20px;
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
+      background-color: transparent;
       padding: 10px;
       text-align: center;
       position: fixed;
-      bottom: 0;
+      top: 70px;
       width: 100%;
+      z-index: 9999;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    nav a:hover {
+      color: #ff9933;
+    }
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to bottom, rgba(0,51,102,0.8), rgba(0,51,102,0.8)), url('https://source.unsplash.com/random/1920x1080');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero-content {
+      z-index: 1;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: #ff9933;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+      color: #fff;
+    }
+    .cta-button {
+      background-color: #ff9933;
+      color: #fff;
+      padding: 20px 40px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #ff6600;
+    }
+    footer {
+      background-color: #003366;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      z-index: 9999;
+      color: #fff;
+    }
+    footer p {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    .social-icons {
+      margin-top: 20px;
+    }
+    .social-icons a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 2rem;
+      transition: transform 0.3s ease;
+    }
+    .social-icons a:hover {
+      transform: scale(1.2);
     }
   </style>
 </head>
@@ -52,18 +123,31 @@
   </header>
 
   <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+    <a href="https://mh-sajib.github.io/My-Website/">হোম</a>
+    <a href="I'm a introvert">সম্পর্কে</a>
+    <a href="mhsajibsajib45@gmail.com">যোগাযোগ</a>
   </nav>
 
+  <div class="hero">
+    <div class="hero-content">
+      <h2>একটি প্রতিমান পরিবারের সাথে একটি অদ্ভুত যাত্রা</h2>
+      <p>আমাদের বাংলা সাইটে অসাধারণ অভিজ্ঞতা অনুভব করুন।</p>
+      <button class="cta-button">শুরু করুন</button>
+    </div>
+  </div>
+
   <section>
-    <h2>About me</h2>
-    <p>I am an introvert and an addict of Mobile phone and the internet. I don't study much and I like to play games</p>
+    <h2>আমার সম্পর্কে</h2>
+    <p>Ami ekjon introvert from Bangladesh. I'm now working on my studies for the upcoming board exam. Pray for me plz</p>
   </section>
 
   <footer>
-    <p>&copy; 2024 Cool Website. All rights reserved.</p>
+    <p>&copy; 2024 MAHAMUD'S SITE সর্বস্বত্ব সংরক্ষিত।</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
   </footer>
 
 </body>
